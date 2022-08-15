@@ -1,0 +1,28 @@
+.button-tip {
+  width: 100%;
+  max-width: 147px;
+  height: 48px;
+  background-color: var(--very-dark-cyan);
+
+  border-radius: 5px;
+  border: 0;
+
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: var(--white);
+
+  cursor: pointer;
+  transition: all .5s ease;
+
+  &:hover {
+    background-color: #9FE8DF;
+    color: var(--very-dark-cyan);
+  }
+}
+
+/* PARA CUANDO ESTE CLICKEADO EL BOTON
+
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+*/

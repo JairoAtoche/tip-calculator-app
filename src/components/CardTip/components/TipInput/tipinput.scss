@@ -1,0 +1,30 @@
+.tip-input {
+  &__img {
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+    top: 0;
+  }
+  &__input {
+    position: relative;
+    width: 310px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: var(--very-light-grayish-cyan);
+    border: 0;
+    text-align: right;
+    padding-right: 17px;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+
+    &:focus {
+      outline: 2px solid var(--strong-cyan);
+    }
+    &::placeholder {
+      color: var(--grayish-cyan);
+    }
+  }
+}

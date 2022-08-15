@@ -3,8 +3,10 @@
 
 :root {
   // Colors
-  --very-dark-cyan: #{var.$primary};
-  --dark-grayish-cyan: #{var.$very-dark-cyan};
+  --strong-cyan: #{var.$primary};
+  
+  --very-dark-cyan: #{var.$very-dark-cyan};
+  --dark-grayish-cyan: #{var.$dark-grayish-cyan};
   --grayish-cyan: #{var.$grayish-cyan};
   --light-grayish-cyan: #{var.$light-grayish-cyan};
   --very-light-grayish-cyan: #{var.$very-light-grayish-cyan};
@@ -18,9 +20,9 @@
 }
 
 body {
+  min-height: 100vh;
+  @include mix.caja-flex(column,space-evenly, center);
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   background-color: var(--light-grayish-cyan);
-  min-height: 100vh;
-  @include mix.caja-flex(column,space-evenly, center);
 }
