@@ -1,0 +1,30 @@
+@use '../../sassStyles/mixins' as mix;
+
+.card {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 920px;
+  height: 789px;
+  padding: 32px;
+  border-radius: 20px;
+
+  //COLOCAR EL DISPLAY Y EL MEDIA
+  @include mix.caja-flex(column,space-between, center);
+
+  &__result {
+    background-color: var(--very-dark-cyan);
+    border-radius: 15px;
+    width: 327px;
+    height: 257px;
+    padding: 38px 24px 24px;
+  }
+}
+
+.calculator__grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,auto);
+  gap: 16px;
+  margin-top: 16px;
+}

@@ -2,6 +2,7 @@
 
 .header {
   @include mix.caja-flex(column,center, center);
+  margin: 50px auto 40px;
 }
 
 .logo {

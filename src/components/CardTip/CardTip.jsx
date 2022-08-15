@@ -1,7 +1,7 @@
 import React from 'react';
 import iconDollar from '../../assets/icon-dollar.svg';
 import iconPerson from '../../assets/icon-person.svg';
-import './cardtip.css';
+import './cardtip.scss';
 import TipCategoryRow from './components/TipCategoryRow';
 import TipButton from './components/TipButton';
 import TipInput from './components/TipInput/TipInput';
@@ -16,8 +16,8 @@ const CardTip = () => {
           <TipInput icon={iconDollar} placeholder='0'/>
         </div>
         <div className="calculator__container select">
-          <TipCategoryRow category='Selected Tip %' />
-          <div className="calculator__container-gap">
+          <TipCategoryRow category='Select Tip %' />
+          <div className="calculator__grid-container">
             <TipButton tipPercentage='5%'/>
             <TipButton tipPercentage='10%'/>
             <TipButton tipPercentage='15%'/>
