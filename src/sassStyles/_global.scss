@@ -1,0 +1,26 @@
+@use './variables' as var;
+@use './mixins' as mix;
+
+:root {
+  // Colors
+  --very-dark-cyan: #{var.$primary};
+  --dark-grayish-cyan: #{var.$very-dark-cyan};
+  --grayish-cyan: #{var.$grayish-cyan};
+  --light-grayish-cyan: #{var.$light-grayish-cyan};
+  --very-light-grayish-cyan: #{var.$very-light-grayish-cyan};
+  --white: #{var.$white};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  background-color: var(--light-grayish-cyan);
+  min-height: 100vh;
+  @include mix.caja-flex(column,space-evenly, center);
+}
